@@ -1,9 +1,9 @@
 type Product {
     _id: ID!
     id: Int!
-    category: Inventory!
     productName: String!
     price: Float!
+    category: Inventory!
     image: String!
 }
 enum Inventory {
@@ -21,9 +21,9 @@ type Mutation {
 }
 
 input ProductInput{
-    category: Inventory!
     productName: String!
     price: Float!
+    category: Inventory!
     image: String!
 
 }

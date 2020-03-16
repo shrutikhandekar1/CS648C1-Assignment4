@@ -1,3 +1,6 @@
+/* eslint linebreak-style: ["error", "windows"] */
+/* eslint no-restricted-globals: "off" */
+/* global db print */
 /*
  * Run using the mongo shell. For remote databases, ensure that the
  * connection string is supplied in the command line. For example:
@@ -12,15 +15,21 @@
 db.products.remove({});
 
 const productsDB = [
-    {
-      id: 1, productName: 'lululemon', price: '3.99', category: 'SHIRTS',
-      image: "https://www.istockphoto.com/photo/formal-shirt-with-button-down-collar-isolated-on-white-gm856917576-141225609",
-    },
-    {
-        id: 2, productName: 'khaki', price: '5.99', category: 'JEANS',
-        image: "https://www.istockphoto.com/photo/blue-jeans-isolated-with-clipping-path-gm600373506-103229995",
-    },
-  ];
+  {
+    id: 1,
+    productName: 'lululemon',
+    price: '3.99',
+    category: 'SHIRTS',
+    image: 'https://www.istockphoto.com/photo/formal-shirt-with-button-down-collar-isolated-on-white-gm856917576-141225609',
+  },
+  {
+    id: 2,
+    productName: 'khaki',
+    price: '5.99',
+    category: 'JEANS',
+    image: 'https://www.istockphoto.com/photo/blue-jeans-isolated-with-clipping-path-gm600373506-103229995',
+  },
+];
 
 
 db.products.insertMany(productsDB);
